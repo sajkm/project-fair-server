@@ -1,0 +1,84 @@
+   Node JS 
+-----------------
+
+1. JS Runtime Environment +JS Library
+2. Features
+   - Extremely Faster
+   - Asynchonous Programming
+   - Single Threaded with event Loop
+   - Highly Scalable
+   - Open Source
+3. Node Js Global Objects
+   - It can access anywhere from node js app without exporting / importing
+   - ex: console.log(),etTimeOut(),...
+4. Node js Module System
+   - Each file node js app is vonsidered as seperate Module. To reuse modules we have export and import
+   - To import a module : use require('module name') method
+   - To export a module : use module.exports / exports keyword
+   - Built in modules
+     - fs : file system - handling file related events
+     - http : generating http request
+     - https : generating https request
+     - event : generating event 
+     - crypto : tool lije encryption, Hashing encryption
+     - process : used to provide currently running process information
+       - environmental variable : used to store run time values
+5. Node js Packages
+   - used to help solving common problems 
+   - collections of node-modules and package.json
+   - install package : npm install package-name 
+   - create package.json : npm configuration file for project 
+   - node-module folder : used to hold copies of installed packages 
+   - package-lock.json : to hold version of installed packages
+6. Backend Concepts 
+   - Client-Server architecture : sending request and response between 2 applications
+   - API : Application Programming Interface
+   - RESTFul API : send data using HTTP methods (GET/POST/PUT/DELETE)
+   - CRUD : create,read,update,delete
+   - CORS : Cross Origin REsource Sharing
+
+   Express JS
+ ----------------
+
+1. Framework for resolving client server app of Node js
+2. create a server folder  
+3. Create package.json file : use command npm init -y
+4. Updat start command as "start":"node index.js" in scripts of package.json
+5. Install Packages
+   - Express : npm i express
+   - Cors : npm i cors 
+   - dotenv : npm i dotenv
+6. Create .env file to hold environmental variables
+7. create .gitignore to add file to ignore while adding to git 
+8. create index.js file to define server
+   -import dotenv
+   - import express
+   - import cors
+   - create express server
+   - use following in server
+     - cors 
+     - parser for json
+   - customise port to listen http request
+   - run server app
+9. Create Routes folder in sever to define routes    
+   - create router.js file
+      - import express
+      - create Router object of express to defne path
+      - using router objects define path
+      - to define logic to resolve http request , redirect it to its controller
+10. Create controller folder in server to define logic ti solve API
+   - create Controller.js file
+     - create function to solve request      
+
+Mongoose 
+------------
+1. Nodejs library to communicate MongoDB
+2. install Mongoose : npm install Mongoose
+3. create db folder for define db connection using mongoose 
+   - create a js file to define connectivity
+   - import mongoose
+   - get connection string from process.env
+   - connect mongoDB with node using mongoose
+   - import connection js file in index.js file
+
+
