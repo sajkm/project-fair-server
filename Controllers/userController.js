@@ -12,7 +12,7 @@ exports.register = async(req,res)=>{
             username,email,password,
             github:"",
             linkedin:"",
-            profilre:""
+            profile:""
         })
         await newUser.save()
         res.status(200).json(newUser)
